@@ -4,7 +4,11 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>Your Movie Ratings</title>
+	<link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
+<p class="menu">
+<?php include 'menu.php';?>
+</p>
 <body>
 	<p align = "left">
 	<button onclick="history.go(-1);">Back</button>
@@ -30,4 +34,7 @@ print "<p>Thank you, $title $name, for rating these movies.</p>
 
 ?>
 </body>
+<p class = "footer">
+<?php include 'footer.php';?>
+</p>
 </html>

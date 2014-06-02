@@ -6,11 +6,11 @@
 		<title>Jordan Stewart's Website</title>
 		<link rel="stylesheet" type="text/css" href="main.css"/>
 	</head>
-	<div class = "menu">
+	<p class = "menu">
 	<?php include "menu.php"
 	?>
-	</div>
-		<p align = "left">
+	</p>
+	<p align = "left">
 	<button onclick="history.go(-1);">Back</button>
 	</p>
 	
