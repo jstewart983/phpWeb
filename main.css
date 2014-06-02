@@ -10,6 +10,9 @@ a:active{
 	position:relative;
 	top:1px;
 }
+a:link{
+	text-decoration: none;
+}
 /*Custom styling for the navigation menu*/
 .menu {
 	font-family:"helvetica-neue", helvetica, arial, sans-serif;
