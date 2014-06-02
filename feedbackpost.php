@@ -14,7 +14,24 @@
 	<button onclick="history.go(-1);">Back</button>
 	</p>
 <?php  
+// define variables and set to empty values
+$response1 = $response2 = $response4 = $response5 = $comments = "";
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+   $response1 = test_input($_POST["response1"]);
+   $response2 = test_input($_POST["response2"]);
+   $response3 = test_input($_POST["response3"]);
+   $response4 = test_input($_POST["response4"]);
+   $response5 = test_input($_POST["response5"]);
+   $comments = test_input($_POST["comments"]);
+}
+
+function test_input($data) {
+   $data = trim($data);
+   $data = stripslashes($data);
+   $data = htmlspecialchars($data);
+   return $data;
+}
 $title = $_POST['title'];
 $name = $_POST['name'];
 $response1 = $_POST['response1'];
