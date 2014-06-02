@@ -5,7 +5,8 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title>Jordan Stewart's Website</title>
 		<link rel="stylesheet" type="text/css" href="main.css"/>
-	</head>
+	</head>	
+<body class = "content">
 	<p class = "menu">
 	<?php include "menu.php"
 	?>
@@ -13,16 +14,13 @@
 	<p align = "left">
 	<button onclick="history.go(-1);">Back</button>
 	</p>
-	
-<body class = "content">
-		<p>
-			<h3><strong>GET or POST?</strong></h3>
-		</p>
+		<h3><strong>GET or POST?</strong></h3>
 		<a href = "votepost.php">POST Method</a><br>
 		<a href = "voteget.php">GET Method</a>
 		</p>
-	</body>
-		<p class="footer">
+			<p class="footer">
 		<?php include 'footer.php';?>
 		</p>
+	</body>
+	
 		</html>
