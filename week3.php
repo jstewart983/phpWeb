@@ -15,9 +15,21 @@
 	<button onclick="history.go(-1);">Back</button>
 	</p>
 		<h3><strong>Contact Info</strong></h3>
+		<p>
+	<form action="memberchoice.php" method = "post">
+	<div align = "left">
+	<p> Name: <select name="familymember">
+	<option value="">[select]</option>
+	<option value="Tom">Tom</option>
+	<option value="Michele">Michele</option>
+	<option value="Jared">Jared</option>
+	<option value="Justus">Justus</option>
+	<option value="John John">John John</option>
+	</select> 
+	</form>
+	</p>
 		<p class="footer">
 		<?php include 'footer.php';?>
 		</p>
 	</body>
-		
 		</html>
