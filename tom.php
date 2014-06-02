@@ -19,9 +19,9 @@
 		<p><img src="PHP Work/Family Photos/tom.jpg"></p>
 			<p>
 			<?php
-			$aboutTom = array("Works at Uponor as Regional Sales Manager for the southern region","Has 7 brothers and sisters","Plays guitar","Loves to bow hunt");
+			$aboutTom = array("Career: Works at Uponor as Regional Sales Manager for the southern region","Has 7 brothers and sisters","Plays guitar","Loves to bow hunt");
 			for ($i = 0; $i < count($aboutTom); $i++){
-				echo nl2br("-$aboutTom[$i]\n");
+				echo nl2br("$aboutTom[$i]\n");
 				
 			} 
 
