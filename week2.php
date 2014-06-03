@@ -14,10 +14,17 @@
 	<p align = "left">
 	<button onclick="history.go(-1);">Back</button>
 	</p>
+		<br />
 		<h3><strong>GET or POST?</strong></h3>
-		<a href = "votepost.php">POST Method</a><br>
+			<br />
+		<a href = "votepost.php">POST Method</a>
+		<br />
+		<br>
 		<a href = "voteget.php">GET Method</a>
 		</p>
+			<br />
+				<br />
+					<br />
 			<p class="footer">
 		<?php include 'footer.php';?>
 		</p>
