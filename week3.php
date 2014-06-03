@@ -16,7 +16,7 @@
 	</p>
 		<h3><strong>Contact Info</strong></h3>
 		<p>
-	<form action="memberchoice.php" method = "post">
+	<form action="handlechoice.php" method = "post">
 	<div align = "left">
 	<p> Name: <select name="familymember">
 	<option value="">[select]</option>
@@ -26,7 +26,13 @@
 	<option value="Justus">Justus</option>
 	<option value="John John">John John</option>
 	</select> 
-	</form>
+	</p>
+	<p>Career: <input type="text" name ="career" size="20"/></p>
+	<p>Favorite Movie: <input type="text" name="movie" size="20" /></p>
+	<p>Favorite Sport: <input type="text" name="sport" size="20" /></p>
+	<input type="submit" name="submit" value="Send My Feedback" />
+	</div>
+			</form>
 	</p>
 		<p class="footer">
 		<?php include 'footer.php';?>
