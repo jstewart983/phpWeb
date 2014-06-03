@@ -63,6 +63,9 @@ body {
 	margin: 0 0 40px 0;
 	float: left;
 	width: 100%;
+	font-family:"helvetica-neue", helvetica, arial, sans-serif;
+	font-size: 20px;
+	color:#272a2e;
 }
 h1 {
 	font-weight: bold;
@@ -181,6 +184,7 @@ a:visited:before {
 	float: right;
 	padding: 9px 0 10px 0;
 	background: #ffffff url('images/L3-ul-top.png') center top no-repeat;
+	text-align: center;
 }
 #primaryNav li li li {
 	background: url('images/L3-center.png') left center no-repeat;
