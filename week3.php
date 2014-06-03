@@ -14,7 +14,9 @@
 	<p align = "left">
 	<button onclick="history.go(-1);">Back</button>
 	</p>
+	<br />
 		<h3><strong>Update Family Member</strong></h3>
+		<br />
 		<p>
 <select name="mydropdown" class="styled" onChange="document.location = this.value" value="GO">
         <option value="">[select]</option>
@@ -28,6 +30,9 @@
 	</div>
 			</form>
 	</p>
+	<br />
+	<br />
+	<br />
 		<p class="footer">
 		<?php include 'footer.php';?>
 		</p>
