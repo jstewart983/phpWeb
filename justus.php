@@ -19,8 +19,27 @@
 		<p><img src="PHP Work/Family Photos/justus.jpg"></p>
 		<p>
 			<?php
-			$aboutJustus = array("Is a Sophomore at Sienna Heights University in MI ","Is an excellent singer","Has a soccer scholarship","Going to school to be a nurse");
+$about1 = $about2 = $about3 = "";
 
+			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			   $about1 = test_input($_POST["about1"]);
+			   $about2 = test_input($_POST["about2"]);
+			   $about3 = test_input($_POST["about3"]);
+
+				}
+
+				function test_input($data) {
+				   $data = trim($data);
+				   $data = stripslashes($data);
+				   $data = htmlspecialchars($data);
+				   return $data;
+				}
+				$about1 = $_POST['about1'];
+				$about2 = $_POST['about2'];
+				$about3 = $_POST['about3'];
+
+			$aboutJustus = array("Is a Sophomore at Sienna Heights University in MI ","Is an excellent singer","Has a soccer scholarship","Going to school to be a nurse");
+array_push($aboutJustus,$about1,$about2,$about3);
 			for ($i = 0; $i < count($aboutJustus); $i++){
 				echo nl2br("-$aboutJustus[$i]\n");
 				}

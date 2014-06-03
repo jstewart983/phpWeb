@@ -17,14 +17,32 @@
 		<h3><strong>My Dad-Tom</strong></h3>
 		</p>
 		<p><img src="PHP Work/Family Photos/tom.jpg"></p>
-			<p>
 			<?php
-		
+			$career = $movie = $sport = "";
+
+			if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			   $about1 = test_input($_POST["about1"]);
+			   $about2 = test_input($_POST["about2"]);
+			   $about3 = test_input($_POST["about3"]);
+
+				}
+
+				function test_input($data) {
+				   $data = trim($data);
+				   $data = stripslashes($data);
+				   $data = htmlspecialchars($data);
+				   return $data;
+				}
+				$about1 = $_POST['about1'];
+				$about2 = $_POST['about2'];
+				$about3 = $_POST['about3'];
 	
 			$aboutTom = array("Career: Works at Uponor as Regional Sales Manager for the southern region","Has 7 brothers and sisters","Plays guitar","Loves to bow hunt");
-			array_push($aboutTom,$career,$sport);
+
+			array_push($aboutTom,$about1,$about2,$about3);
+
 			for ($i = 0; $i < count($aboutTom); $i++){
-				echo nl2br("$aboutTom[$i]\n");
+				echo nl2br("-$aboutTom[$i]\n");
 				
 			} 
 			?>

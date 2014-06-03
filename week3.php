@@ -14,23 +14,17 @@
 	<p align = "left">
 	<button onclick="history.go(-1);">Back</button>
 	</p>
-		<h3><strong>Contact Info</strong></h3>
+		<h3><strong>Update Family Member</strong></h3>
 		<p>
-	<form action="handlechoice.php" method = "post">
-	<div align = "left">
-	<p> Name: <select name="familymember">
-	<option value="">[select]</option>
-	<option value="Tom">Tom</option>
-	<option value="Michele">Michele</option>
-	<option value="Jared">Jared</option>
-	<option value="Justus">Justus</option>
-	<option value="John John">John John</option>
-	</select> 
+<select name="mydropdown" class="styled" onChange="document.location = this.value" value="GO">
+        <option value="">[select]</option>
+        <option value="tomform.php">Tom</option>
+        <option value="micheleform.php">Michele</option>
+        <option value="jaredform.php">Jared</option>
+        <option value="justusform.php">Justus</option>
+        <option value="johnjohnform.php">John John</option>
+</select>
 	</p>
-	<p>Career: <input type="text" name ="career" size="20"/></p>
-	<p>Favorite Movie: <input type="text" name="movie" size="20" /></p>
-	<p>Favorite Sport: <input type="text" name="sport" size="20" /></p>
-	<input type="submit" name="submit" value="Send My Feedback" />
 	</div>
 			</form>
 	</p>
