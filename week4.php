@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title>Jordan Stewart's Website</title>
 		<link rel="stylesheet" type="text/css" href="main.css"/>
-	</head>	
+	</head>
 <body class = "content">
 	<p class = "menu">
 	<?php include "menu.php"
@@ -17,6 +17,9 @@
 	<br />
 		<h3><strong>CMS Part 1</strong></h3>
 		<br />
+    <p>
+      <button> <a href = "kcmshome.php">Enter CMS</a></button>
+    </p>
 	</p>
 	<br />
 	<br />
