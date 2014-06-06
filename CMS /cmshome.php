@@ -21,7 +21,6 @@
 		</p>
 		</p>
 		<br />
-		<p> Here is the link to my repo on Github: <a href = "https://github.com/jstewart983/phpWeb"><strong> jstewart983/phpWeb </strong></a></p>
 		<br />
 		<br />
 		<p class="footer">
