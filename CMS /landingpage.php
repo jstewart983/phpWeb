@@ -6,31 +6,15 @@
 		<title>Jordan Stewart's Website</title>
 		<link rel="stylesheet" type="text/css" href="/main.css"/>
 </head>
-<body class = "cmscontent">
-<div class="menu">
-<p>
-	<?php include 'cmsmenu.php';?>
-	</p>
-	</div>
+<body class = "content">
+	<h2>The Fishers Of Men Project</h2>
+	<h3>"And he saith unto them, Follow me, and I will make you fishers of men."</h3>
 	<div align = "left">
-	
-	<button class = "button" onclick="history.go(-1);">Back</button>
-	</p>
+	<a class = "button" onclick="history.go(-1);" title = "Previous Page">Back</a>
 	</div>
-	</p>
-			<h3><strong>Please log in:</strong></h3>
+	<div align ="center"><a class = "button" href = "cmshome.php">Continue</a></div>
 			<br />
-		<p align ="center">
-	<div class="input-control text">
-    <input type="text" value="" placeholder="username"/>
-</div>
-		</p>
-				<p align ="center">
-	<div class="input-control password">
-    <input type="password" value="" placeholder="password"/>
-</div>
-
-		</p>
+			<p><img src = "cmsimages/alllures.jpg" height="520" width="1200"></p>
 		<br />
 		<p align="left">
 		</p>
@@ -38,7 +22,6 @@
 		<br />
 		<br />
 		<br />
-
 		<p class="footer">
 		<?php include 'footer.php';?>
 		</p>

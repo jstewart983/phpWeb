@@ -7,9 +7,11 @@
 		<link rel="stylesheet" type="text/css" href="/main.css"/>
 </head>
 <body class = "content">
-<p class="menu">
-	<?php include 'cmsmenu.php';?>
+<div>
+    <p class="cmsmenu" style="float: left;"><div class = "menu"><?php include 'cmsmenu.php';?></div><img src="/cmsimages/parrotjig.jpg" height="80px" width="180px" border="1px"/>
 	</p>
+
+
 	<br />
 			<h3><strong>We Are Fishers Of Men</strong></h3>
 			<br />
