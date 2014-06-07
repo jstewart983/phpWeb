@@ -9,8 +9,8 @@
 <p class="menu">
 <?php include 'menu.php';?>
 </p>
-<p align = "left">
-	<button onclick="history.go(-1);">Back </button>
+	<p align = "left">
+	<button class = "button" onclick="history.go(-1);">Back</button>
 	</p>
 <h3 align="center"><strong>This is my report printed in PHP</strong></h3>
 <body>

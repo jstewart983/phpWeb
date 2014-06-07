@@ -11,8 +11,8 @@
 	<?php include "menu.php"
 	?>
 	</div>
-	<p align = "left">
-	<button onclick="history.go(-1);">Back</button>
+		<p align = "left">
+	<button class = "button" onclick="history.go(-1);">Back</button>
 	</p>
 <body class = "content"><p align = "left">**********GET METHOD**********</p>
 <p align="left">Please rate these five movies:</p>

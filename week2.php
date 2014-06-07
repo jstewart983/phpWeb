@@ -12,7 +12,7 @@
 	?>
 	</p>
 	<p align = "left">
-	<button onclick="history.go(-1);">Back</button>
+	<button class = "button" onclick="history.go(-1);">Back</button>
 	</p>
 		<br />
 		<h3><strong>GET or POST?</strong></h3>

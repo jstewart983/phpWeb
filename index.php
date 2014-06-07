@@ -5,14 +5,13 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title>Jordan Stewart's Website</title>
 		<link rel="stylesheet" type="text/css" href="main.css"/>
+		
 </head>
 <body class = "content">
 <p class="menu">
 	<?php include 'menu.php';?>
 	</p>
-	<br />
 			<h3><strong>Welcome</strong></h3>
-			<br />
 		<p align ="left">
 			For my website, I chose to use Yahoo Small Business Web Hosting (Yahoo). I first looked at Yahoo because Professor Hart suggested it and because it met all the requirements for the class, which included supporting PHP and mySQL5.x. After looking into it further, I found there to be other beneficial aspects. One of the major pros is the price. It is only $10 a month, which is reasonably priced. For smaller, low-traffic sites like the ones we will be creating, it is fairly fast.
 		</p>
@@ -22,8 +21,6 @@
 		</p>
 		<br />
 		<p> Here is the link to my repo on Github: <a href = "https://github.com/jstewart983/phpWeb"><strong> jstewart983/phpWeb </strong></a></p>
-		<br />
-		<br />
 		<p class="footer">
 		<?php include 'footer.php';?>
 		</p>

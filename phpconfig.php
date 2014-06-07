@@ -10,7 +10,7 @@
 		<?php include 'menu.php';?>
 		</p>
 		<p align = "left">
-	<button onclick="history.go(-1);">Back </button>
+	<button class = "button" onclick="history.go(-1);">Back</button>
 	</p>
 		<body class = "content">
 			<p>

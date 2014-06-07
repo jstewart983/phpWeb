@@ -10,9 +10,9 @@
 <?php include 'menu.php';?>
 </p>
 <body>
-	<p align = "left">
-	<button onclick="history.go(-1);">Back</button>
-	</p>
+	  <p align = "left">
+   <button class = "button" onclick="history.go(-1);">Back</button>
+   </p>
 <?php  
 // define variables and set to empty values
 $response1 = $response2 = $response4 = $response5 = $comments = "";
