@@ -11,7 +11,7 @@
 	<?php include 'cmsmenu.php';?>
 	</p>
 	<br />
-			<h3><strong>wE aRE fISHERS oF mEN</strong></h3>
+			<h3><strong>We Are Fishers Of Men</strong></h3>
 			<br />
 		<p align ="left">
 			
