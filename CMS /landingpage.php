@@ -6,24 +6,16 @@
 		<title>Jordan Stewart's Website</title>
 		<link rel="stylesheet" type="text/css" href="/main.css"/>
 </head>
-<body class = "content">
-	<h2>The Fishers Of Men Project</h2>
-	<h3>"And he saith unto them, Follow me, and I will make you fishers of men."</h3>
-	<div align = "left">
-	<a class = "button" onclick="history.go(-1);" title = "Previous Page">Back</a>
-	</div>
-			<br />
-			<p><img src = "cmsimages/alllures.jpg" height="420" width="1000"></p>
+<body class ="content">
+	<h2 class = "cmscontent">The Fishers Of Men Project</h2>
+	<p><i>"And he saith unto them, Follow me, and I will make you fishers of men."</i></p>
+	<table><tr><td valign="top"><a class = "button" onclick="history.go(-1);" title = "Previous Page">Back</a></td></tr></table>
+	<table align="center"><tr><td><img src = "cmsimages/alllures.jpg" height="620" width="1100"></td></tr></table>
+	<br />
 			<div align ="center"><a class = "button" href = "cmshome.php">Continue</a></div>
-		<br />
-		<p align="left">
-		</p>
-		</p>
-		<br />
-		<br />
-		<br />
+			<br />
 		<p class="footer">
-		<?php include 'footer.php';?>
+		<?php include 'cmsfooter.php';?>
 		</p>
 	</body>
 		</html>
