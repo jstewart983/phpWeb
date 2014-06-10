@@ -52,7 +52,12 @@ $lures = array( array(""=>"$parrotjig","name"=>"Parrot Jig", "price"=>"$ ".numbe
 <tr>
 <td><?php 
 print '<p>The parrot jig is the perfect all around lure. The parrot jig is ideal for catching more smallmouth bass than you can handle';
-print '<br /><p><button><a href = "addtocart.php">add to cart</a></button></p>';
+if (isset($_SESSION['loggedintime'])){
+  print '<br /><p><button><a href = "addtocart.php">add to cart</a></button></p>';
+}
+else{
+  print 'Log in to add this item to your shopping cart';
+}
 ?>
 </td>
 </tr>
