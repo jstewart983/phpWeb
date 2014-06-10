@@ -43,7 +43,7 @@ date_default_timezone_set('America/Chicago');
 		Our family has been fishing for over 50 years. We have fished all over the US of A. Having such a large family has enabled
 		us to compile all the best practices for catching the most fish and catching the biggest fish. Our events include many different strategy
 		tutorials as well as a great message by our pastor in the family. Our hand made lures are some of the best in the industry with years of 
-		testing design all done in house by the fisherman in the family.
+		testing design all done in house by Stewart fishermen.
 		</td>
 		<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</td>
 		</tr> 
