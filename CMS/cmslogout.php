@@ -31,9 +31,9 @@ print '<a href ="cmslogin.php"><strong>log in</strong></a>';
 		<br />
 		<br />
 		<br />
-		<p class="footer" align = "center">
+		<div class="footer" align = "center">
 		<?php include 'cmsfooter.php';?>
-		</p>
+		</div>
 	</body>
 		</html>
 		<?php 
