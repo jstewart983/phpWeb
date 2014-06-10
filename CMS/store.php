@@ -26,6 +26,7 @@ include 'cmsmenu.php';
            } 
 				?>
 </div>
+<p><b>Our Lures</b></p>
 <?php
 $parrotjig = '<a href = "parrotjig.php"><img src = "parrotjig1.jpg" height = "80" width = "180" /></a>';
 $flyingfish = '<a href ="flyingfish.php"><img src = "flyingfish2.jpg" height = "80" width = "180" /></a>';
