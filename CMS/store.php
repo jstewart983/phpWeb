@@ -61,7 +61,7 @@ $lures = array( array(""=>"$parrotjig","name"=>"Parrot Jig", "price"=>"$ ".numbe
   <tbody>
 <?php foreach ($lures as $row): array_map('htmlentities', $row); ?>
     <tr>
-      <td><?php echo implode('</td><td>', $row); ?></td>
+      <td><?php echo implode('</td><td align = "right">', $row); ?></td>
     </tr>
 <?php endforeach; ?>
   <tbody>
