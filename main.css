@@ -10,7 +10,11 @@ Style for navigation menu
 	color:#f0a30a;
 	font-weight: lighter;
 }
-
+.cmslandingpage{
+		color:#f0a30a;
+	font-weight: lighter;
+	font-size: 60;
+}
 .cmsmenu {
 	text-align:center;
 	font-size: 40px;
@@ -20,7 +24,6 @@ Style for navigation menu
     { background:#ffffff;
     padding:12px;
     border:1px solid #999999; 
-box-shadow: 10px 10px 5px #888888;
 }
 
 .doublecolumn{

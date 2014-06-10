@@ -1,3 +1,7 @@
+<?php 
+ob_start(); 
+date_default_timezone_set('America/Chicago');
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -7,40 +11,66 @@
 		<link rel="stylesheet" type="text/css" href="/main.css"/>
 </head>
 <body class = "cmscontent">
-<div class="menu">
-<p>
+<div class="cmsmenu">
 	<?php include 'cmsmenu.php';?>
-	</p>
 	</div>
-	<div align = "left">
+	<div align = "center">
+	<?php 
+// Print some introductory text:
+print '<h2>login</h2>
+	<p>If you log in you will be able to add items to your shopping cart and ultimately purchase those items if you so desire.</p>';
+$loggedin = False;
+// Check if the form has been submitted:
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+	// Handle the form:
+	if ( (!empty($_POST['email'])) && (!empty($_POST['password'])) ) {
+
+		if ( (strtolower($_POST['email']) == 'me@example.com') && ($_POST['password'] == 'testpass') ) { // Correct!
+
+			$loggedin = True;
+
+			session_start();
+			$_SESSION['email']=$_POST['email'];
+			$_SESSION['status']=$loggedin;
+
+			$_SESSION['loggedintime']=time();
+
+			ob_end_clean();
+			header ('Location: store.php');
+			exit();
 	
-	<button class = "button" onclick="history.go(-1);">Back</button>
-	</p>
-	</div>
-	</p>
-			<h3><strong>Please log in:</strong></h3>
-			<br />
-		<p align ="center">
-	<div class="input-control text">
-    <input type="text" value="" placeholder="username"/>
-</div>
-		</p>
-				<p align ="center">
-	<div class="input-control password">
-    <input type="password" value="" placeholder="password"/>
-</div>
+		} else { // Incorrect!
 
-		</p>
-		<br />
-		<p align="left">
-		</p>
-		</p>
-		<br />
-		<br />
+			print '<p>The submitted email address and password do not match those on file!<br />Go back and try again.</p>';
+	
+		}
+
+	} else { // Forgot a field.
+
+		print '<p>Please make sure you enter both an email address and a password!<br />Go back and try again.</p>';
+	
+	}
+
+} else { // Display the form.
+
+	print '<form action="cmslogin.php" method="post">
+	<p>Email Address: <input type="text" name="email" size="20" /></p>
+	<p>Password: <input type="password" name="password" size="20" /></p>
+	<p><input type="submit" name="submit" value="Log In!" /></p>
+	</form>';
+
+}
+
+?></div>
+		
 		<br />
 
-		<p class="footer">
-		<?php include 'footer.php';?>
+		<p class="footer" align="center">
+		<?php include 'cmsfooter.php';?>
 		</p>
 	</body>
 		</html>
+		<?php 
+		ob_end_flush();
+		?>
