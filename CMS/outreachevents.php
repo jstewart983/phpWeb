@@ -27,7 +27,6 @@ date_default_timezone_set('America/Chicago');
 		<table align="center"><tr><td><i>CONTENT</i></td>
 		</tr>
 		<tr>
-		<td>&nbsp</td>
 		<td align="center">CONTENT</td>
 		</tr> 
 		</table>
