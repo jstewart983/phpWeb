@@ -66,9 +66,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		
 		<br />
 
-		<p class="footer" align="center">
+		<div class="footer" align="center">
 		<?php include 'cmsfooter.php';?>
-		</p>
+		</div>
 	</body>
 		</html>
 		<?php 
