@@ -1,6 +1,7 @@
 <?php
 ob_start();
 session_start();
+date_default_timezone_set('America/Chicago');
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -41,7 +42,7 @@ $lures = array(array(""=>"$partyjig","name"=>"Party Jig", "price"=>"$ ".number_f
   <tbody>
 <?php foreach ($lures as $row): array_map('htmlentities', $row); ?>
     <tr>
-      <td><?php echo implode('</td><td>', $row); ?></td>
+      <td><?php echo implode('</td><td align="right">', $row); ?></td>
     </tr>
 <?php endforeach; ?>
   <tbody>
