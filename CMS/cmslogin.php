@@ -54,11 +54,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 } else { // Display the form.
 
-	print '<form action="cmslogin.php" method="post">
-	<p>Email Address: <input type="text" name="email" size="20" /></p>
-	<p>Password: <input type="password" name="password" size="20" /></p>
-	<p><input type="submit" name="submit" value="Log In!" /></p>
-	</form>';
+	print '<table><form action="cmslogin.php" method="post">
+	<tr><td align ="right">Email Address: <input type="text" name="email" size="20" /></td></tr>
+	<tr><td align ="right">Password: <input type="password" name="password" size="20" /></td></tr>
+	<tr><td align = "center"><input type="submit" name="submit" value="Log In!" /></td></tr>
+	</form></table';
 
 }
 
