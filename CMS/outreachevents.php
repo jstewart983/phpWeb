@@ -13,7 +13,7 @@ date_default_timezone_set('America/Chicago');
 </head>
 <body class = "content">
    <div class = "cmsmenu"><?php include 'cmsmenu.php';?></div>
-			<p><b>We Are Fishers Of Men</b></p>
+			<p><b>Upcoming Events</b></p>
 			<div class = "content">
 <?php if(isset($_SESSION['loggedintime'])){
 			print '<p align="right"><a href = "cmslogout.php"><b>log out</b></a></p>';
@@ -28,7 +28,7 @@ date_default_timezone_set('America/Chicago');
 		</tr>
 		<tr>
 		<td>&nbsp</td>
-		<td align="left">CONTENT</td>
+		<td align="center">CONTENT</td>
 		</tr> 
 		</table>
 		<br />
