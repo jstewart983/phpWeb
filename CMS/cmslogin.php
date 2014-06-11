@@ -33,8 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			session_start();
 			$_SESSION['email']=$_POST['email'];
 			$_SESSION['status']=$loggedin;
-			$_SESSION['cart']=$cart = array();
-
+			//$_SESSION['cart']=$cart = array();
 			$_SESSION['loggedintime']=time();
 
 			ob_end_clean();
@@ -59,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	<tr><td align ="right">Email Address: <input type="text" name="email" size="20" /></td></tr>
 	<tr><td align ="right">Password: <input type="password" name="password" size="20" /></td></tr>
 	<tr><td align = "center"><input type="submit" name="submit" value="Log In!" /></td></tr>
-	</form></table';
+	</form></table>';
 
 }
 
