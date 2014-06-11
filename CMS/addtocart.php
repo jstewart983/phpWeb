@@ -27,9 +27,7 @@ include 'cmsmenu.php';
 				?>
 </div>
 <?php
-$parrotjig = '<img src = "parrotjig1.jpg" height = "80" width = "180" />';
 
-$lures = array( array(""=>"$parrotjig","name"=>"Parrot Jig", "price"=>"$ ".number_format(8.00 , 2), "qty"=>15)); 
 ?>
 </div>
 <?php if (count($lures) > 0): ?>
@@ -42,27 +40,14 @@ $lures = array( array(""=>"$parrotjig","name"=>"Parrot Jig", "price"=>"$ ".numbe
   <tbody>
 <?php foreach ($lures as $row): array_map('htmlentities', $row); ?>
     <tr>
-      <td><?php echo implode('</td><td align="right">', $row); ?></td>
+      <td><?php echo implode('</td><td align = "right">', $row); ?></td>
     </tr>
 <?php endforeach; ?>
   <tbody>
 </table>
 <?php endif; ?>
-<table class = "content" align ="center">
-<tr>
-<td><?php
-print '<p>The parrot jig is the perfect all around lure. The parrot jig is ideal for catching more smallmouth bass than you can handle';
-if (isset($_SESSION['loggedintime'])){
-  print '<br /><p><form action ="addtocart.php" method="post"><input type="submit" value="add to cart"</p>';
-}
-else{
-  print '<p>Log in to add this item to your shopping cart</p>';
-}
-?>
-</td>
-</tr>
-</table>
 <br />
+
 <div class = "footer">
 <?php 
 include 'cmsfooter.php';
