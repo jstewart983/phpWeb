@@ -7,7 +7,7 @@ date_default_timezone_set('America/Chicago');
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>Jordan Stewart's Website</title>
+		<title>The Fishers Of Men Project</title>
 		<link rel="stylesheet" type="text/css" href="/main.css"/>
 </head>
 <body class = "cmscontent">
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$_SESSION['status']=$loggedin;
 			//$_SESSION['cart']=$cart = array();
 			$_SESSION['loggedintime']=time();
-
+			$_SESSION[]
 			ob_end_clean();
 			header ('Location: store.php');
 			exit();

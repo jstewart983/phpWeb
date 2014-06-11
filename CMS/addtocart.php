@@ -9,7 +9,7 @@ date_default_timezone_set('America/Chicago');
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>Jordan Stewart's Website</title>
+		<title>The Fishers Of Men Project</title>
 		<link rel="stylesheet" type="text/css" href="/main.css"/>
 </head>
 <body class ="cmscontent">
@@ -24,6 +24,26 @@ include 'cmsmenu.php';
 			else {
 				print'<p align = "right"><a href = "cmslogin.php"><b>log in</b></a></p>';
            } 
+
+           if (isset($_POST['addtocart'])) {
+        $item_name = $_POST['item_name'];
+        $price = $_POST['price'];
+        $qty = $_POST['qty'];
+
+        $newItem = $item_name.":".$price.":".$qty;
+        //echo $newItem;
+
+        if (isset($_SESSION['shop_session'])) {
+          array_push($shop_session, $newItem);
+          //header('Location: cart.php');
+          print_r($shop_session);
+        }
+        else {
+            array_push($temp_session, $newItem);
+          //header('Location: login.php?notLoggedIn=true');
+          print_r($temp_session);
+        }
+      }
 				?>
 </div>
 <?php

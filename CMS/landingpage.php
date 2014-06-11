@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head class ="header">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>Jordan Stewart's Website</title>
+		<title>The Fishers Of Men Project</title>
 		<link rel="stylesheet" type="text/css" href="/main.css"/>
 </head>
 <body class ="content">
