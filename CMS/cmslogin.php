@@ -34,8 +34,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$_SESSION['email']=$_POST['email'];
 			$_SESSION['status']=$loggedin;
 			//$_SESSION['cart']=$cart = array();
-			$_SESSION['loggedintime']=time();
-			$_SESSION[]
 			ob_end_clean();
 			header ('Location: store.php');
 			exit();
