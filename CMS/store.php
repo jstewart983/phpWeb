@@ -18,6 +18,7 @@ date_default_timezone_set('America/Chicago');
 include 'cmsmenu.php';
 ?>
 <div class = "content">
+<p align = "center"><b>our lures</b></p>
 <?php if(isset($_SESSION['loggedintime'])){
 			print '<p align="right"><a href = "cmslogout.php"><b>log out</b></a></p>';
 			print '<p>Hello there! You have been logged in since ' . date('g:i a',$_SESSION['loggedintime']) . '</p>';}
