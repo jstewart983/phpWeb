@@ -6,6 +6,9 @@ Style for navigation menu
 	color:#272a2e;
 	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 }
+h2{
+	font-weight: lighter;
+}
 .cmscontent{
 	color:#f0a30a;
 	font-weight: lighter;

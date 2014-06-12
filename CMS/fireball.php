@@ -25,7 +25,7 @@ $lures = array(array(""=>"$fireball","name"=>"Fireball", "price"=>"$ ".number_fo
 <table align = "center">
   <thead>
     <tr>
-      <th><?php echo implode('</th><th>', array_keys(current($lures))); ?></th>
+      <th><?php echo implode('</th><th align = "right">', array_keys(current($lures))); ?></th>
     </tr>
   </thead>
   <tbody>

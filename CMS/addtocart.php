@@ -4,18 +4,30 @@ ob_start();
 
 //start new session
 session_start();
+
+//set timezone to CST
 date_default_timezone_set('America/Chicago');
 ?>
 
 <?php
+//include the navigation menu
 include 'cmsmenu.php';
 ?>
 
 <div class = "content">
-<?php if(isset($_SESSION['loggedintime'])){
+<?php 
+//first check if loggedintime is set in session
+if(isset($_SESSION['loggedintime'])){
+
+      //if true then make the "logout" link visible and - 
+      //display a welcome message and the time when the user logged in
+      //Hello there! You have been logged in since $_SESSION['loggedintime']
 			print '<p align="right"><a href = "cmslogout.php"><b>log out</b></a></p>';
 			print '<p>Hello there! You have been logged in since ' . date('g:i a',$_SESSION['loggedintime']) . '</p>';}
 			else {
+
+        //if the loggedintime is not set in the session-
+        //display "login" in the upper right hand corner
 				print'<p align = "right"><a href = "cmslogin.php"><b>log in</b></a></p>';
            } 
 
@@ -41,11 +53,23 @@ include 'cmsmenu.php';
 				?>
 </div>
 </div>
-<?php if (count($lures) > 0): ?>
+<?php
+
+//check to make sure there are elements in the lures array
+ if (count($lures) > 0): 
+
+  ?>
 <table align = "center">
   <thead>
     <tr>
-      <th><?php echo implode('</th><th>', array_keys(current($lures))); ?></th>
+      <th>
+      <?php 
+
+      //divide the array keys into individual header cells
+      echo implode('</th><th>', array_keys(current($lures))); 
+
+      ?>
+      </th>
     </tr>
   </thead>
   <tbody>
