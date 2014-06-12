@@ -1,23 +1,27 @@
 <?php
-//start 
+//start output buffering
 ob_start();
+
+//start new session
 session_start();
 date_default_timezone_set('America/Chicago');
 ?>
 
+<!--HTML HEADER-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>The Fishers Of Men Project</title>
-		<link rel="stylesheet" type="text/css" href="/main.css"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>The Fishers Of Men Project</title>
+	<link rel="stylesheet" type="text/css" href="/main.css"/>
 </head>
 <body class ="cmscontent">
 <div class = "cmsmenu">
 <?php
 include 'cmsmenu.php';
 ?>
+
 <div class = "content">
 <?php if(isset($_SESSION['loggedintime'])){
 			print '<p align="right"><a href = "cmslogout.php"><b>log out</b></a></p>';
@@ -25,7 +29,7 @@ include 'cmsmenu.php';
 			else {
 				print'<p align = "right"><a href = "cmslogin.php"><b>log in</b></a></p>';
            } 
-
+           
            if (isset($_POST['addtocart'])) {
         $item_name = $_POST['item_name'];
         $price = $_POST['price'];
@@ -47,9 +51,6 @@ include 'cmsmenu.php';
       }
 				?>
 </div>
-<?php
-
-?>
 </div>
 <?php if (count($lures) > 0): ?>
 <table align = "center">
