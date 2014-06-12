@@ -51,6 +51,8 @@ $lures = array( array(""=>"$parrotjig","name"=>"Parrot Jig", "price"=>"$ ".numbe
              ); 
 ?>
 </div>
+<p align = "center">click on the lure for more info</p>
+<br />
 <?php if (count($lures) > 0): ?>
 <table align = "center">
   <thead>
