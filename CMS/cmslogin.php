@@ -1,5 +1,11 @@
-<?php 
-ob_start(); 
+<?php
+//start output buffering
+ob_start();
+
+//start new session
+session_start();
+
+//set timezone to CST
 date_default_timezone_set('America/Chicago');
 ?>
 	<?php include 'cmsmenu.php';?>
