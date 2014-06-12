@@ -72,6 +72,7 @@ $lures = array( array(""=>"$parrotjig","name"=>"Parrot Jig", "price"=>"$ ".numbe
 <div class = "footer">
 <?php 
 include 'cmsfooter.php';
+
 ?>
 </div>
 <br />
