@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			session_start();
 			$_SESSION['email']=$_POST['email'];
 			$_SESSION['status']=$loggedin;
-			//$_SESSION['cart']=$cart = array();
+			$_SESSION['loggedintime']=time();
 			ob_end_clean();
 			header ('Location: store.php');
 			exit();
