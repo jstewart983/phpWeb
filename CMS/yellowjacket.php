@@ -23,7 +23,7 @@ include 'cmsmenu.php';
 <?php
 $yellowjacket = '<img src = "yellowjacket9.jpg" height = "80" width = "180" />';
 
-$lures = array(array(""=>"$yellowjacket","name"=>"Yellow Jacket", "price"=>"$ ".number_format(11.00 , 2), "qty"=>18)); 
+$lures = array(array(""=>"$yellowjacket","name"=>"Yellow Jacket", "price"=>"$ ".number_format(11.00 , 2), "qty"=>"$quantity"," "=>"$add")); 
 ?>
 </div>
 <?php if (count($lures) > 0): ?>
@@ -46,7 +46,6 @@ $lures = array(array(""=>"$yellowjacket","name"=>"Yellow Jacket", "price"=>"$ ".
 <tr>
 <td><?php 
 print '<p>The Yellow Jacket is our go to Walleye fishing lure. You will immediately see that this lure was carefully and intricately designed to look as enticing as possible.</p>';
-print '<br /><p><button><a href = "addtocart.php">add to cart</a></button></p>';
 ?>
 </td>
 </tr>

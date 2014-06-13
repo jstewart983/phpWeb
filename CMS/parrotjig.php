@@ -22,8 +22,19 @@ include 'cmsmenu.php';
 </div>
 <?php
 $parrotjig = '<img src = "parrotjig1.jpg" height = "80" width = "180" />';
-
-$lures = array( array(""=>"$parrotjig","name"=>"Parrot Jig", "price"=>"$ ".number_format(8.00 , 2), "qty"=>15)); 
+if(isset($_SESSION['loggedintime'])){
+  $quantity ='<form method="post" action="cart.php">
+          <input type="hidden" name="productid" value="1" />
+          <select name="quantity">
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>';
+          $add = '<input type="submit" value="add to cart" name="buybtn" />
+        </form>';
+}
+else{
+$quantity ='';
+$add = '';
+}
+$lures = array(array(""=>"$parrotjig","name"=>"Parrot Jig", "price"=>"$ ".number_format(8.00 , 2), "qty"=>"$quantity"," "=>"$add")); 
 ?>
 </div>
 <?php if (count($lures) > 0): ?>
@@ -44,14 +55,9 @@ $lures = array( array(""=>"$parrotjig","name"=>"Parrot Jig", "price"=>"$ ".numbe
 <?php endif; ?>
 <table class = "content" align ="center">
 <tr>
-<td><?php
+<td>
+<?php
 print '<p>The parrot jig is the perfect all around lure. The parrot jig is ideal for catching more smallmouth bass than you can handle';
-if (isset($_SESSION['loggedintime'])){
-  print '<br /><p><form action ="addtocart.php" method="post"><input type="submit" value="add to cart"</p>';
-}
-else{
-  print '<p>Log in to add this item to your shopping cart</p>';
-}
 ?>
 </td>
 </tr>

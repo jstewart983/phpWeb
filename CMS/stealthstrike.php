@@ -23,7 +23,20 @@ include 'cmsmenu.php';
 <?php
 $stealthstrike = '<img src = "stealthstrike6.jpg" height = "80" width = "180" />';
 
-$lures = array(array(""=>"$stealthstrike","name"=>"Stealth Strike", "price"=>"$ ".number_format(5.00 , 2), "qty"=>10)); 
+if(isset($_SESSION['loggedintime'])){
+  $quantity ='<form method="post" action="cart.php">
+          <input type="hidden" name="productid" value="1" />
+          <select name="quantity">
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>';
+          $add = '<input type="submit" value="add to cart" name="buybtn" />
+        </form>';
+}
+else{
+$quantity ='';
+$add = '';
+}
+
+$lures = array(array(""=>"$stealthstrike","name"=>"Stealth Strike", "price"=>"$ ".number_format(5.00 , 2), "qty"=>"$quantity"," "=>"$add")); 
 ?>
 </div>
 <?php if (count($lures) > 0): ?>
@@ -46,7 +59,6 @@ $lures = array(array(""=>"$stealthstrike","name"=>"Stealth Strike", "price"=>"$ 
 <tr>
 <td><?php 
 print '<p>Sometimes the Pike are a bit smarter than we would like them to be. That is when the Stealth Strike is called up to the front lines.</p>';
-print '<br /><p><button><a href = "addtocart.php">add to cart</a></button></p>';
 ?>
 </td>
 </tr>

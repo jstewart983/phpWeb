@@ -23,7 +23,7 @@ include 'cmsmenu.php';
 <?php
 $tigerfish = '<img src = "tigerfish10.jpg" height = "80" width = "180" />';
 
-$lures = array(array(""=>"$tigerfish","name"=>"Tiger Fish", "price"=>"$ ".number_format(13.00 , 2), "qty"=>8)); 
+$lures = array(array(""=>"$tigerfish","name"=>"Tiger Fish", "price"=>"$ ".number_format(13.00 , 2), "qty"=>"$quantity"," "=>"$add") ); 
 ?>
 </div>
 <?php if (count($lures) > 0): ?>
@@ -46,7 +46,6 @@ $lures = array(array(""=>"$tigerfish","name"=>"Tiger Fish", "price"=>"$ ".number
 <tr>
 <td><?php 
 print '<p>Every one of us Stewarts remembers our first good Crappie fishing trip. They are not the biggest of fish but boy are they are a hoot to reel in one after the other. We designed the Tiger Fish with the fast pace in mind so that you catch alot of fish and you can quickly get your lure back in the water. Have fun.</p>';
-print '<br /><p><button><a href = "addtocart.php">add to cart</a></button></p>';
 ?>
 </td>
 </tr>

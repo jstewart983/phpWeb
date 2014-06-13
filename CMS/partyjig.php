@@ -22,8 +22,19 @@ include 'cmsmenu.php';
 </div>
 <?php
 $partyjig = '<img src = "partyjig5.jpg" height = "80" width = "180" />';
-
-$lures = array(array(""=>"$partyjig","name"=>"Party Jig", "price"=>"$ ".number_format(10.00 , 2), "qty"=>24)); 
+if(isset($_SESSION['loggedintime'])){
+  $quantity ='<form method="post" action="cart.php">
+          <input type="hidden" name="productid" value="1" />
+          <select name="quantity">
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>';
+          $add = '<input type="submit" value="add to cart" name="buybtn" />
+        </form>';
+}
+else{
+$quantity ='';
+$add = '';
+}
+$lures = array(array(""=>"$partyjig","name"=>"Party Jig", "price"=>"$ ".number_format(10.00 , 2), "qty"=>"$quantity"," "=>"$add")); 
 ?>
 </div>
 <?php if (count($lures) > 0): ?>
@@ -46,7 +57,6 @@ $lures = array(array(""=>"$partyjig","name"=>"Party Jig", "price"=>"$ ".number_f
 <tr>
 <td><?php 
 print '<p>We call this lure the Party Jig for one reason: reeling in a giant Muskey is always a party on a Stewart Family boat.</p>';
-print '<br /><p><button><a href = "addtocart.php">add to cart</a></button></p>';
 ?>
 </td>
 </tr>
