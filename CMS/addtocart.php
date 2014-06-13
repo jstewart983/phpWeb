@@ -1,3 +1,27 @@
+<!--EXAMPLE CART 
+Array
+(
+    [CustomerDetails] => Array
+        (
+            [customeremail] => me@example.com
+            [go] =>  Submit order 
+        )
+
+    [OrderLines] => Array
+        (
+            [0] => Array
+                (
+                    [productid] => 1
+                    [quantity] => 1
+                    [price] => 9.99
+                    [totprice] => 9.99
+                    [productname] => Baseball cap
+                )
+
+        )
+
+)-->
+
 <?php
 //start output buffering
 ob_start();
