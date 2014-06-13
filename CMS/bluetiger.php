@@ -22,8 +22,19 @@ include 'cmsmenu.php';
 </div>
 <?php
 $bluetiger = '<img src = "bluetiger3.jpg" height = "80" width = "180" />';
-
-$lures = array(array(""=>"$bluetiger","name"=>"Blue Tiger", "price"=>"$ ".number_format(5.00 , 2), "qty"=>10)); 
+if(isset($_SESSION['loggedintime'])){
+  $quantity ='<form method="post" action="cart.php">
+          <input type="hidden" name="productid" value="1" />
+          <select name="quantity">
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>';
+          $add = '<input type="submit" value="add to cart" name="buybtn" />
+        </form>';
+}
+else{
+$quantity ='';
+$add = '';
+}
+$lures = array( array(""=>"$bluetiger","name"=>"Blue Tiger", "price"=>"$ ".number_format(5.00 , 2), "qty"=>"$quantity"," "=>"$add")); 
 ?>
 </div>
 <?php if (count($lures) > 0): ?>
@@ -46,7 +57,6 @@ $lures = array(array(""=>"$bluetiger","name"=>"Blue Tiger", "price"=>"$ ".number
 <tr>
 <td><?php 
 print '<p>The Blue Tiger is for Catfish. If you like eat Catfish then you should purchase this lure immediately.</p>';
-print '<br /><p><button><a href = "addtocart.php">add to cart</a></button></p>';
 ?>
 </td>
 </tr>

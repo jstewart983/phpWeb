@@ -33,16 +33,28 @@ $stripedmenace = '<a href = "stripedmenace.php"><img src = "stripedmenace8.jpg" 
 $yellowjacket = '<a href = "yellowjacket.php"><img src = "yellowjacket9.jpg" height = "80" width = "180" /></a>';
 $tigerfish = '<a href = "tigerfish.php"><img src = "tigerfish10.jpg" height = "80" width = "180" /></a>';
 
-$lures = array( array(""=>"$parrotjig","name"=>"Parrot Jig", "price"=>"$ ".number_format(8.00 , 2), "qty"=>15),
-               array(""=>"$flyingfish","name"=>"Flying Fish", "price"=>"$ ".number_format(13.00 , 2), "qty"=>25),
-               array(""=>"$bluetiger","name"=>"Blue Tiger", "price"=>"$ ".number_format(5.00 , 2), "qty"=>10),
-               array(""=>"$bluejoy","name"=>"Blue Joy", "price"=>"$ ".number_format(9.00 , 2), "qty"=>7),
-               array(""=>"$partyjig","name"=>"Party Jig", "price"=>"$ ".number_format(10.00 , 2), "qty"=>24),
-               array(""=>"$stealthstrike","name"=>"Stealth Strike", "price"=>"$ ".number_format(5.00 , 2), "qty"=>10),
-               array(""=>"$fireball","name"=>"Fireball", "price"=>"$ ".number_format(6.00 , 2), "qty"=>9),
-               array(""=>"$stripedmenace","name"=>"Striped Menace", "price"=>"$ ".number_format(5.00 , 2), "qty"=>40),
-               array(""=>"$yellowjacket","name"=>"Yellow Jacket", "price"=>"$ ".number_format(11.00 , 2), "qty"=>18),
-               array(""=>"$tigerfish","name"=>"Tiger Fish", "price"=>"$ ".number_format(13.00 , 2), "qty"=>8) 
+if(isset($_SESSION['loggedintime'])){
+  $quantity ='<form method="post" action="cart.php">
+          <input type="hidden" name="productid" value="1" />
+          <select name="quantity">
+            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>';
+          $add = '<input type="submit" value="add to cart" name="buybtn" />
+        </form>';
+}
+else{
+$quantity ='';
+$add = '';
+}
+$lures = array( array(""=>"$parrotjig","name"=>"Parrot Jig", "price"=>"$ ".number_format(8.00 , 2), "qty"=>"$quantity"," "=>"$add"),
+               array(""=>"$flyingfish","name"=>"Flying Fish", "price"=>"$ ".number_format(13.00 , 2), "qty"=>"$quantity"," "=>"$add"),
+               array(""=>"$bluetiger","name"=>"Blue Tiger", "price"=>"$ ".number_format(5.00 , 2), "qty"=>"$quantity"," "=>"$add"),
+               array(""=>"$bluejoy","name"=>"Blue Joy", "price"=>"$ ".number_format(9.00 , 2), "qty"=>"$quantity"," "=>"$add"),
+               array(""=>"$partyjig","name"=>"Party Jig", "price"=>"$ ".number_format(10.00 , 2), "qty"=>"$quantity"," "=>"$add"),
+               array(""=>"$stealthstrike","name"=>"Stealth Strike", "price"=>"$ ".number_format(5.00 , 2), "qty"=>"$quantity"," "=>"$add"),
+               array(""=>"$fireball","name"=>"Fireball", "price"=>"$ ".number_format(6.00 , 2), "qty"=>"$quantity"," "=>"$add"),
+               array(""=>"$stripedmenace","name"=>"Striped Menace", "price"=>"$ ".number_format(5.00 , 2), "qty"=>"$quantity"," "=>"$add"),
+               array(""=>"$yellowjacket","name"=>"Yellow Jacket", "price"=>"$ ".number_format(11.00 , 2), "qty"=>"$quantity"," "=>"$add"),
+               array(""=>"$tigerfish","name"=>"Tiger Fish", "price"=>"$ ".number_format(13.00 , 2), "qty"=>"$quantity"," "=>"$add") 
              ); 
 ?>
 </div>
