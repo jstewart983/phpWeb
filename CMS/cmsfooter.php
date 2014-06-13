@@ -2,7 +2,7 @@
 <?php
 	echo '<p align="center" size = "12px"><i>Lure Designs by John Stewart</i></p><br />';
 	echo'<a href = "adminlogin.php"><i>Administrator Login</i></a> | <a href="publisherlogin.php"><i>Publisher Login</i></a> | ';
-	echo "Copyright &copy; 1999-" . date("Y") . " W3Schools.com  | ";?>
+	echo "Copyright &copy; " . date("Y") . " Jordan Stewart  | ";?>
 <?php
 // outputs e.g. 'Last modified: March 04 1998 20:43:59.'
 	echo "Last modified: " . date ("F d Y g:i:s.  | ", getlastmod());
