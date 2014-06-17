@@ -2,7 +2,7 @@
 
 #First To Do
 
-- [ ] Test
+- [x] Test
 - [ ] blog content
 - [ ] events content
 - [ ] shopping cart (in session)
