@@ -22,7 +22,7 @@ date_default_timezone_set('America/Chicago');
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	
-	if ( (!empty($_POST['email'])) && (!empty($_POST['password'])) ) {
+	if ( (!empty($_POST['username'])) && (!empty($_POST['password'])) ) {
 
 		if ( (strtolower($_POST['username']) == 'jordanstewart') && ($_POST['password'] == 'administrator') ) { 
 
