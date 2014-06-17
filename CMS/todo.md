@@ -1,6 +1,6 @@
 #The Fishers Of Men Project
 
-- [ ] blog content
+- [x] blog content
 - [ ] events content
 - [ ] shopping cart (in session)
 - [ ] publisher with access level
