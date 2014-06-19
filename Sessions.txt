@@ -1,0 +1,8 @@
+Sessions
+
+<?php 
+session_start(); //should be one of the first lines in your script
+?>
+//the first time a session is started a random ID is generated
+//once the session is started you can record data to the session array
+//
